@@ -1,0 +1,38 @@
+div#faq_box {
+    width: calc(50% - 20px);
+    float: left;
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #737373;
+}
+div#faq_box:nth-child(2n+1) {
+    clear: left;
+}
+.faq_des {
+    display: none;
+    margin-top: 10px;
+}
+.faq_more {
+    text-align: center;
+    margin: 10px;
+}
+.faq_title {
+    font-weight: bold;
+    cursor: pointer;
+}
+.faq_more a {
+    background: #737373;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.faq_more a:hover,.faq_more a:focus{
+    background: white;
+    color: #737373;
+    text-decoration: none;
+}
+.tb_faq {
+    overflow: hidden;
+}
