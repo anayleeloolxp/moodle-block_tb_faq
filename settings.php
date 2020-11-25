@@ -25,10 +25,18 @@
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
-    $settings->add(new admin_setting_configtext(
+
+    require_once($CFG->dirroot . '/blocks/tb_faq/lib.php');
+
+    $setting = new admin_setting_configtext(
         'block_tb_faq/license',
         get_string('license', 'block_tb_faq'),
         get_string('license', 'block_tb_faq'),
         0
-    ));
+    );
+    $setting->set_updatedcallback(updateconffaq());
+    $settings->add($setting);
+
+    $setting = new admin_setting_configfaq('block_tb_faq/settingsjson', '', '', '', PARAM_RAW);
+    $settings->add($setting);
 }
