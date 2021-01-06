@@ -87,7 +87,7 @@ class block_tb_faq extends block_base {
 
         $this->content->text .= '</div>';
 
-        $this->content->text .= '<div class="faq_more"><a href="'.$resposedata->data->button_link.'">'.$resposedata->data->buttons_text.'</a></div>';
+        $this->content->text .= '<div class="faq_more"><a href="'.@$resposedata->data->button_link.'">'.@$resposedata->data->buttons_text.'</a></div>';
 
         $this->content->footer = '';
 
