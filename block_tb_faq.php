@@ -71,23 +71,23 @@ class block_tb_faq extends block_base {
         $this->content = new stdClass();
         $this->content->text = '<div class="tb_faq">';
 
-        foreach($mdata as $mdatasing){
+        foreach ($mdata as $mdatasing) {
             $this->content->text .= '<div id="faq_box" class="faq_box">';
 
             $this->content->text .= '<div class="faq_title">';
             $this->content->text .= $mdatasing->faq_title;
             $this->content->text .= '</div>';
-    
+
             $this->content->text .= '<div class="faq_des">';
             $this->content->text .= $mdatasing->faq_answer;
             $this->content->text .= '</div>';
-    
+
             $this->content->text .= '</div>';
         }
 
         $this->content->text .= '</div>';
 
-        $this->content->text .= '<div class="faq_more"><a href="'.@$resposedata->data->button_link.'">'.@$resposedata->data->buttons_text.'</a></div>';
+        $this->content->text .= '<div class="faq_more"><a href="' . @$resposedata->data->button_link . '">' . @$resposedata->data->buttons_text . '</a></div>';
 
         $this->content->footer = '';
 
@@ -111,7 +111,7 @@ class block_tb_faq extends block_base {
     public function applicable_formats() {
         return array('all' => true);
     }
-    
+
     /**
      * Get settings from Leeloo
      */
