@@ -6,7 +6,7 @@ div#faq_box {
     margin: 10px;
     border: 1px solid #737373;
 }
-div#faq_box:nth-child(2n+1) {
+div#faq_box:nth-child(2n + 1) {
     clear: left;
 }
 .faq_des {
@@ -28,7 +28,8 @@ div#faq_box:nth-child(2n+1) {
     padding: 10px 20px;
     display: inline-block;
 }
-.faq_more a:hover,.faq_more a:focus{
+.faq_more a:hover,
+.faq_more a:focus {
     background: white;
     color: #737373;
     text-decoration: none;
