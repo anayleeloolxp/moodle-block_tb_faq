@@ -58,6 +58,15 @@ class block_tb_faq extends block_base {
         $leeloolxplicense = get_config('block_tb_faq')->license;
         $settingsjson = get_config('block_tb_faq')->settingsjson;
         $resposedata = json_decode(base64_decode($settingsjson));
+
+        if (!isset($resposedata->data->faq_settings)) {
+            $this->title = get_string('displayname', 'block_tb_faq');
+            $this->content = new stdClass();
+            $this->content->text = '';
+            $this->content->footer = '';
+            return $this->content;
+        }
+
         $mdata = $resposedata->data->faq_settings;
 
         if (empty($resposedata->data->block_title)) {
