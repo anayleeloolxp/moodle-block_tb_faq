@@ -27,3 +27,5 @@ $string['pluginname'] = 'Leeloo LXP FAQ';
 $string['displayname'] = 'Leeloo LXP FAQ';
 $string['nolicense'] = 'Invalid Leeloo LXP License ID';
 $string['license'] = 'Leeloo LXP License ID';
+
+$string['privacy:metadata'] = 'The Leeloo LXP FAQ (tb_faq) block only shows information and does not store data itself.';
