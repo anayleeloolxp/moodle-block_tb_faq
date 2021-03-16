@@ -52,6 +52,7 @@ function updateconffaq() {
     if ($infoleeloolxp->status != 'false') {
         $leeloolxpurl = $infoleeloolxp->data->install_url;
     } else {
+        set_config('settingsjson', base64_encode($output), 'block_tb_faq');
         return;
     }
     $url = $leeloolxpurl . '/admin/Theme_setup/get_faq_settings';
