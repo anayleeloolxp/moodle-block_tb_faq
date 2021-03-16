@@ -25,6 +25,7 @@
 
 $string['pluginname'] = 'Leeloo LXP FAQ';
 $string['displayname'] = 'Leeloo LXP FAQ';
+$string['blocktitle'] = 'Leeloo LXP FAQ';
 $string['nolicense'] = 'Invalid Leeloo LXP License ID';
 $string['license'] = 'Leeloo LXP License ID';
 $string['tb_faq:addinstance'] = 'Add a new Leeloo LXP FAQ block';
