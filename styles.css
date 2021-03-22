@@ -22,18 +22,24 @@ div#faq_box:nth-child(2n + 1) {
     cursor: pointer;
 }
 .faq_more a {
-    background: #737373;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+    color: #fff!important;
+    background-color: #0f6fc5;
+    border-color: #0f6fc5;
+    padding: .375rem .75rem;
+    font-size: .9375rem;
     display: inline-block;
-}
-.faq_more a:hover,
-.faq_more a:focus {
-    background: white;
-    color: #737373;
-    text-decoration: none;
+    font-weight: 400;
 }
 .tb_faq {
     overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+    div#faq_box {
+        width: 100%;
+        float: left;
+        background: #fff;
+        padding: 15px;
+        margin: 5px 0;
+        border: 1px solid #737373;
+    }
 }
