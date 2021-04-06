@@ -4,7 +4,7 @@ div#faq_box {
     background: white;
     padding: 15px;
     margin: 10px;
-    border: 1px solid #737373;
+    border: 1px solid rgba(0,0,0,.125);
 }
 div#faq_box:nth-child(2n + 1) {
     clear: left;
@@ -40,6 +40,6 @@ div#faq_box:nth-child(2n + 1) {
         background: #fff;
         padding: 15px;
         margin: 5px 0;
-        border: 1px solid #737373;
+        border: 1px solid rgba(0,0,0,.125);
     }
 }
