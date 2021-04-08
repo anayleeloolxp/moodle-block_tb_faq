@@ -48,8 +48,8 @@ You will first create an account and provide your organization information. We w
 Once your account is created, you can use your FREE Leeloo LXP Core bundle, or upgrade to a bigger bundle. Your institution might be eligible for a free or a discounted upgrade.
 
 ## How to add the FAQ block on your Moodle home page
-You can add the Awesome Responsive FAQ section to any page theme with a { center – position }
-If you want to use it on your Boost Home page (or any other theme that doesn’t include a { Center position } for home page), you need to install the Leeloo LXP Content Filter.
+You can add the Awesome Responsive FAQ section to any page theme with a { Content – Region }
+If you want to use it on your Boost Home page (or any other theme that doesn’t include a { Content – Region } for home page), you need to install the Leeloo LXP Content Filter.
 
 ## The Leeloo LXP Content Filter
-The Leeloo LXP Content Filter allows you to use shortcodes on a page without a { center – position } and display any of the Leeloo LXP Content Plugins from the Suite in the { center – position }.
+The Leeloo LXP Content Filter allows you to use shortcodes on a page without a { Content – Region } and display any of the Leeloo LXP Content Plugins from the Suite in the { Content – Region }.
