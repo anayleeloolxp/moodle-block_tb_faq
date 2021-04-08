@@ -96,7 +96,9 @@ class block_tb_faq extends block_base {
 
         $this->content->text .= '</div>';
 
-        $this->content->text .= '<div class="faq_more"><a href="' . @$resposedata->data->button_link . '">' . @$resposedata->data->buttons_text . '</a></div>';
+        if (@$resposedata->data->buttons_text != '') {
+            $this->content->text .= '<div class="faq_more"><a href="' . @$resposedata->data->button_link . '">' . @$resposedata->data->buttons_text . '</a></div>';
+        }
 
         $this->content->footer = '';
 
@@ -119,13 +121,5 @@ class block_tb_faq extends block_base {
      */
     public function applicable_formats() {
         return array('all' => true);
-    }
-
-    /**
-     * Get settings from Leeloo
-     */
-    public function cron() {
-        require_once($CFG->dirroot . '/blocks/tb_faq/lib.php');
-        updateconffaq();
     }
 }
