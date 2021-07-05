@@ -4,7 +4,7 @@
     background: white;
     padding: 15px;
     margin: 10px;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
 }
 .block_tb_faq div#faq_box:nth-child(2n + 1) {
     clear: left;
@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 .block_tb_faq .faq_more a {
-    color: #fff!important;
+    color: #fff !important;
     background-color: #0f6fc5;
     border-color: #0f6fc5;
     padding: .375rem .75rem;
@@ -33,6 +33,7 @@
 .block_tb_faq .tb_faq {
     overflow: hidden;
 }
+
 @media only screen and (max-width: 767px) {
     .block_tb_faq div#faq_box {
         width: 100%;
@@ -40,6 +41,6 @@
         background: #fff;
         padding: 15px;
         margin: 5px 0;
-        border: 1px solid rgba(0,0,0,.125);
+        border: 1px solid rgba(0, 0, 0, .125);
     }
 }
