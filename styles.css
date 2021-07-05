@@ -1,4 +1,4 @@
-div#faq_box {
+.block_tb_faq div#faq_box {
     width: calc(50% - 20px);
     float: left;
     background: white;
@@ -6,22 +6,22 @@ div#faq_box {
     margin: 10px;
     border: 1px solid rgba(0,0,0,.125);
 }
-div#faq_box:nth-child(2n + 1) {
+.block_tb_faq div#faq_box:nth-child(2n + 1) {
     clear: left;
 }
-.faq_des {
+.block_tb_faq .faq_des {
     display: none;
     margin-top: 10px;
 }
-.faq_more {
+.block_tb_faq .faq_more {
     text-align: center;
     margin: 10px;
 }
-.faq_title {
+.block_tb_faq .faq_title {
     font-weight: bold;
     cursor: pointer;
 }
-.faq_more a {
+.block_tb_faq .faq_more a {
     color: #fff!important;
     background-color: #0f6fc5;
     border-color: #0f6fc5;
@@ -30,11 +30,11 @@ div#faq_box:nth-child(2n + 1) {
     display: inline-block;
     font-weight: 400;
 }
-.tb_faq {
+.block_tb_faq .tb_faq {
     overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
-    div#faq_box {
+    .block_tb_faq div#faq_box {
         width: 100%;
         float: left;
         background: #fff;

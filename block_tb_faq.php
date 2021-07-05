@@ -82,7 +82,7 @@ class block_tb_faq extends block_base {
         }
         $this->title = $resposedata->data->block_title;
 
-        $this->page->requires->js(new moodle_url($CFG->wwwroot . '/blocks/tb_faq/js/jquery.min.js'));
+        $this->page->requires->jquery();
         $this->page->requires->js(new moodle_url($CFG->wwwroot . '/blocks/tb_faq/js/faq.js'));
 
         $this->content = new stdClass();
