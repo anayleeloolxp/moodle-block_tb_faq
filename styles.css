@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 .block_tb_faq .faq_more a {
-    color: #fff !important;
+    color: #fff !important; /* stylelint-disable-line declaration-no-important */
     background-color: #0f6fc5;
     border-color: #0f6fc5;
     padding: .375rem .75rem;
