@@ -23,8 +23,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die;
-
 /**
  * This block simply outputs the FAQ.
  *
@@ -105,7 +103,9 @@ class block_tb_faq extends block_base {
         $this->content->text .= '</div>';
 
         if (@$resposedata->data->buttons_text != '') {
-            $this->content->text .= '<div class="faq_more"><a href="' . @$resposedata->data->button_link . '">' . @$resposedata->data->buttons_text . '</a></div>';
+            $this->content->text .= '<div class="faq_more">
+            <a href="' . @$resposedata->data->button_link . '">'
+                . @$resposedata->data->buttons_text . '</a></div>';
         }
 
         $this->content->footer = '';
