@@ -78,7 +78,13 @@ class block_tb_faq extends block_base {
                 $resposedata->data->block_title = '';
             }
         }
-        $this->title = $resposedata->data->block_title;
+
+        $summaryformatoptions = new stdClass();
+        $summaryformatoptions->noclean = false;
+        $summaryformatoptions->overflowdiv = false;
+        $summaryformatoptions->filter = true;
+
+        $this->title = format_text($resposedata->data->block_title, 1, $summaryformatoptions);
 
         $this->page->requires->jquery();
         $this->page->requires->js(new moodle_url('/blocks/tb_faq/js/faq.js'));
@@ -90,11 +96,11 @@ class block_tb_faq extends block_base {
             $this->content->text .= '<div id="faq_box" class="faq_box">';
 
             $this->content->text .= '<div class="faq_title">';
-            $this->content->text .= $mdatasing->faq_title;
+            $this->content->text .= format_text($mdatasing->faq_title, 1, $summaryformatoptions);
             $this->content->text .= '</div>';
 
             $this->content->text .= '<div class="faq_des">';
-            $this->content->text .= $mdatasing->faq_answer;
+            $this->content->text .= format_text($mdatasing->faq_answer, 1, $summaryformatoptions);
             $this->content->text .= '</div>';
 
             $this->content->text .= '</div>';
